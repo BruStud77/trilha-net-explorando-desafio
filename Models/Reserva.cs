@@ -15,15 +15,16 @@ namespace DesafioProjetoHospedagem.Models
 
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
-            // DONE: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
-            if (hospedes.Count <= Suite.Capacidade)
+            // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
+            // *IMPLEMENTE AQUI*
+            if (true)
             {
                 Hospedes = hospedes;
             }
             else
             {
-                // DONE: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
-                throw new Exception($"Capacidade insuficiente: O numero de {hospedes.Count} hóspedes excede a capacidade da suíte, que é de {Suite.Capacidade} pessoas.");
+                // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
+                // *IMPLEMENTE AQUI*
             }
         }
 
@@ -34,25 +35,26 @@ namespace DesafioProjetoHospedagem.Models
 
         public int ObterQuantidadeHospedes()
         {
-            // DONE: Retorna a quantidade de hóspedes (propriedade Hospedes)
-            return Hospedes.Count;
+            // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
+            // *IMPLEMENTE AQUI*
+            return 0;
         }
 
         public decimal CalcularValorDiaria()
         {
-            // DONE: Retorna o valor da diária
-            decimal valor = DiasReservados * Suite.ValorDiaria;
+            // TODO: Retorna o valor da diária
+            // Cálculo: DiasReservados X Suite.ValorDiaria
+            // *IMPLEMENTE AQUI*
+            decimal valor = 0;
 
             // Regra: Caso os dias reservados forem maior ou igual a 10, conceder um desconto de 10%
-            if (DiasReservados >= 10)
+            // *IMPLEMENTE AQUI*
+            if (true)
             {
-                return valor - 10 * valor / 100;
-            }
-            else
-            {
-                return valor;
+                valor = 0;
             }
 
+            return valor;
         }
     }
 }
